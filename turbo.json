@@ -8,27 +8,27 @@
     "pmlis#build": {
       "dependsOn": ["^build"],
       "env": ["SOME_OTHER_ENV_VAR"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**"]
     },
     "portview#build": {
       "dependsOn": ["^build"],
       "env": ["SOME_OTHER_ENV_VAR"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**"]
     },
     "project1#build": {
       "dependsOn": ["^build"],
       "env": ["SOME_OTHER_ENV_VAR"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**"]
     },
     "pmmpeportal#build": {
       "dependsOn": ["^build"],
       "env": ["SOME_OTHER_ENV_VAR"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**"]
     },
     "defaultproject#build": {
       "dependsOn": ["^build"],
       "env": ["SOME_OTHER_ENV_VAR"],
-      "outputs": [".next/**", "!.next/cache/**"]
+      "outputs": [".next/**"]
     }
   },
   "globalEnv": ["GITHUB_TOKEN"],
