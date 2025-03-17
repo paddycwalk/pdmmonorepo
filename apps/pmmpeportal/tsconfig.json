@@ -11,10 +11,13 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
+    ".next/types/**/*.ts",
+    "components/molecules/DockPrivacySettings/types/custom-elements.d.ts",
     "next-env.d.ts",
     "next.config.js",
-    ".next/types/**/*.ts",
-    "components/molecules/DockPrivacySettings/types/custom-elements.d.ts"
+    "build/types/**/*.ts"
   ],
-  "exclude": ["node_modules"]
+  "exclude": [
+    "node_modules"
+  ]
 }

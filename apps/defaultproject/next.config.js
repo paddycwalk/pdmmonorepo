@@ -22,6 +22,7 @@ const nextConfig = {
   env: {
     CUSTOM_ENV: process.env.NODE_ENV,
   },
+  distDir: "build",
 };
 
 export default nextConfig;
