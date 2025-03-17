@@ -1,0 +1,29 @@
+@use "./variables";
+@use "./fonts";
+@use "./mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "BoschSans", sans-serif;
+  font-weight: 400;
+  @include FontSizeDefault;
+}
+
+*::selection {
+  background-color: var(--bosch-blue-50);
+  color: var(--bosch-white);
+}
+
+.-primary ::selection {
+  color: var(--bosch-blue-50);
+  background-color: var(--bosch-white);
+}
+
+// Form test
+.Form {
+}

@@ -1,0 +1,59 @@
+.Contexify {
+  &_menu {
+    box-shadow: var(--box-shadow);
+    // border-radius: 4px;
+  }
+
+  &_item {
+    padding: 10px;
+
+    &:hover {
+      background-color: var(--bosch-gray-90);
+    }
+  }
+
+  .contexify {
+    --contexify-zIndex: 9999999;
+    --contexify-menu-minWidth: 220px;
+    --contexify-menu-padding: 0;
+    --contexify-menu-radius: 0px;
+    --contexify-menu-bgColor: unset;
+    --contexify-menu-shadow: none;
+    --contexify-menu-negatePadding: unset;
+
+    --contexify-separator-color: unset;
+    --contexify-separator-margin: unset;
+    --contexify-itemContent-padding: unset;
+    --contexify-activeItem-radius: unset;
+    --contexify-item-color: unset;
+    --contexify-activeItem-color: unset;
+    --contexify-activeItem-bgColor: unset;
+    --contexify-rightSlot-color: unset;
+    --contexify-activeRightSlot-color: unset;
+    --contexify-arrow-color: unset;
+    --contexify-activeArrow-color: unset;
+
+    z-index: 9999999 !important;
+
+    &_itemContent {
+      padding: 0;
+    }
+  }
+
+  .contexify_item:not(.contexify_item-disabled):hover > .contexify_itemContent {
+    background-color: unset;
+    color: var(--bosch-black);
+  }
+
+  &.Contexify-default {
+    .Contexify {
+      &_item {
+        padding: 0;
+
+        &:hover {
+          background-color: unset;
+        }
+      }
+    }
+  }
+}

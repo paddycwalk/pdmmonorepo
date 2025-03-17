@@ -1,0 +1,43 @@
+.LoadingSpinner {
+  width: 50px;
+  height: 50px;
+  border: var(--border-width-large) solid var(--bosch-white);
+  border-radius: 50%;
+  border-color: #707174 #707174 #707174 transparent;
+  animation: spin 0.65s linear infinite;
+
+  &-size-tiny {
+    height: var(--size-tiny);
+    width: var(--size-tiny);
+  }
+
+  &-size-small {
+    height: var(--size-small);
+    width: var(--size-small);
+  }
+
+  &-size-medium {
+    height: var(--size-medium);
+    width: var(--size-medium);
+  }
+
+  &-size-large {
+    height: var(--size-large);
+    width: var(--size-large);
+  }
+
+  &-size-default {
+    height: var(--size-default);
+    width: var(--size-default);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: BoschSans;
+  src:
+    local("BoschSans-Regular"),
+    url("../assets/fonts/BoschSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: BoschSans;
+  src:
+    local("BoschSans-Bold"),
+    url("../assets/fonts/BoschSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: 700;
+  font-display: swap;
+}

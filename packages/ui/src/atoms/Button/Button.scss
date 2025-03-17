@@ -1,0 +1,70 @@
+.Button {
+  background: unset;
+  border: unset;
+  padding: 0 var(--space-medium);
+  height: 40px;
+  font-family: inherit;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &-primary {
+    background-color: var(--bosch-blue-50);
+    color: var(--bosch-white);
+
+    &:hover {
+      background-color: var(--bosch-blue-40);
+    }
+  }
+
+  &-outline {
+    background-color: unset;
+    border: 1px solid var(--bosch-blue-50);
+    color: var(--bosch-blue-50);
+
+    &:hover {
+      background-color: var(--bosch-blue-90);
+      color: var(--bosch-blue-50);
+      border-color: var(--bosch-blue-30);
+    }
+  }
+
+  &-integrated {
+    background-color: transparent;
+
+    &:hover {
+      color: var(--bosch-blue-50);
+    }
+  }
+
+  &-icon {
+    display: flex;
+    align-items: center;
+    gap: var(--space-small);
+  }
+
+  &-icononly {
+    padding: 12px;
+  }
+
+  &-disabled {
+    opacity: 0.25;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
+  &-small {
+    padding: 0px var(--space-small);
+    height: 30px;
+    @include FontSizeSmall;
+  }
+
+  &-tiny {
+    padding: 0px var(--space-small);
+    height: 20px;
+    @include FontSizeSmall;
+  }
+}

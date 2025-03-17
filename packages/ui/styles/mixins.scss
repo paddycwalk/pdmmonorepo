@@ -1,0 +1,25 @@
+// @import "./font-settings";
+@mixin FontSizeTiny {
+  font-size: var(--font-size-tiny);
+  line-height: var(--line-height-tiny);
+}
+
+@mixin FontSizeSmall {
+  font-size: var(--font-size-small);
+  line-height: var(--line-height-small);
+}
+
+@mixin FontSizeDefault {
+  font-size: var(--font-size-default);
+  line-height: var(--line-height-default);
+}
+
+@mixin FontSizeLarge {
+  font-size: var(--font-size-large);
+  line-height: var(--line-height-large);
+}
+
+@mixin FontSizeXL {
+  font-size: var(--font-size-xl);
+  line-height: var(--line-height-xl);
+}

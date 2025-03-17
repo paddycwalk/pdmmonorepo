@@ -1,0 +1,25 @@
+{
+  "name": "pmmpeportal",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development next dev --turbopack -p 3000",
+    "prd": "cross-env NODE_ENV=production next dev --turbopack -p 3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --max-warnings 0",
+    "check-types": "tsc --noEmit",
+    "labels:export": "tsx scripts/labels/export.ts",
+    "labels:import": "tsx scripts/labels/import.ts constants.ts labels_de_DE.xlsx labels_en_GB.xlsx",
+    "sonar": "node ./sonar.js"
+  },
+  "dependencies": {
+    "@repo/ui": "*",
+    "@repo/global-functions": "*"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*"
+  }
+}

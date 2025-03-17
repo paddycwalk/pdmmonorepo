@@ -1,0 +1,21 @@
+@use "../../../styles/mixins";
+
+.Textfield {
+  position: relative;
+  margin-top: 10px;
+  width: 100%;
+
+  &_label {
+    @include FontSizeTiny;
+    position: absolute;
+    top: -8px;
+    left: 5px;
+    background-color: var(--bosch-white);
+    padding: 0 5px;
+    transition: color 0.3s ease;
+  }
+
+  input:focus ~ &_label {
+    color: var(--bosch-blue-50);
+  }
+}

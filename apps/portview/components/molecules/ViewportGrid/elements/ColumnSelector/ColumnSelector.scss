@@ -1,0 +1,61 @@
+.ColumnSelector {
+  position: relative;
+  margin-left: auto;
+
+  &_settings {
+    position: absolute;
+    top: 0;
+  }
+
+  &_Content {
+    box-shadow: var(--box-shadow);
+
+    &-bottom {
+      display: flex;
+    }
+  }
+
+  .Menu {
+    box-shadow: none;
+
+    &:first-of-type {
+      border-right: 1px solid var(--bosch-gray-45);
+    }
+  }
+
+  &_Modal {
+    &_main {
+      display: flex;
+      flex-direction: column;
+      background: var(--bosch-white);
+    }
+
+    &_header {
+      display: flex;
+      justify-content: space-around;
+      padding: 10px;
+      border-bottom: 1px solid var(--bosch-gray-50);
+    }
+
+    &_content {
+      display: flex;
+      gap: 10px;
+      height: 400px;
+    }
+
+    &_left,&_right {
+      max-height: 400px; /* Höhe des Containers, anpassen nach Bedarf */
+      overflow-y: auto; /* Vertikales Scrollen aktivieren */
+      position: relative;
+      width: 50%;
+      padding: 10px;
+    }
+
+    &_separator {
+      width: 1px;
+      background-color: var(--bosch-gray-50);
+    }
+  }
+}
+
+

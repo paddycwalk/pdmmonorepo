@@ -1,0 +1,80 @@
+@use "../../../styles/mixins";
+
+.Grid {
+  width: 100%;
+  font-family: inherit !important;
+
+  // ag grid override styles
+  .ag-row-hover {
+    background-color: var(--bosch-gray-90);
+    cursor: pointer;
+  }
+
+  .ag-row-hover:not(.ag-full-width-row):before {
+    background-color: unset;
+  }
+
+  .ag-row {
+    border-color: var(--bosch-gray-65);
+  }
+
+  .ag-root-wrapper {
+    z-index: 0;
+    border: unset;
+    border-radius: 0;
+  }
+
+  .ag-header {
+    background-color: unset;
+    border-color: var(--bosch-black);
+    font-weight: 700;
+  }
+
+  .ag-cell {
+    display: flex;
+  }
+
+  .ag-cell-wrapper {
+    justify-content: center;
+    width: 100%;
+  }
+
+  // .ag-cell-focus {
+  //   // border: 1px solid transparent !important;
+  //   // border-color: unset !important;
+  // }
+
+  .ag-popup-editor {
+    background-color: var(--bosch-white);
+    box-shadow: 0px 0px 8px 1.6px rgba(0, 0, 0, 0.25);
+    min-width: 700px;
+    padding: 20px;
+    user-select: unset;
+  }
+
+  .ag-status-bar {
+    padding: 0;
+    border-top: unset;
+    @include FontSizeTiny;
+  }
+
+  .ag-status-name-value-value {
+    font-weight: 700;
+    margin-left: 3px;
+  }
+
+  .ag-overlay-loading-wrapper {
+    background-color: unset;
+    pointer-events: none;
+  }
+
+  .ag-cell-first-right-pinned,
+  .ag-pinned-right-header {
+    border-left-color: var(--bosch-black) !important;
+  }
+
+  .ag-cell-last-left-pinned,
+  .ag-pinned-left-header {
+    border-right-color: var(--bosch-black) !important;
+  }
+}

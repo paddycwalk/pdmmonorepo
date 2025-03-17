@@ -1,0 +1,25 @@
+@use "../../../styles/mixins";
+
+.Headline {
+  font-weight: 400;
+
+  &-bold {
+    font-weight: 700;
+  }
+
+  &-tiny {
+    @include FontSizeTiny;
+  }
+
+  &-small {
+    @include FontSizeSmall;
+  }
+
+  &-medium {
+    @include FontSizeDefault;
+  }
+
+  &-large {
+    @include FontSizeLarge;
+  }
+}

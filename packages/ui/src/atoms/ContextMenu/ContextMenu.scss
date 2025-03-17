@@ -1,0 +1,19 @@
+.ContextMenu {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+
+  &-visible {
+    z-index: 99;
+    visibility: visible;
+    opacity: 1;
+    box-shadow: var(--box-shadow);
+    background-color: var(--bosch-white);
+
+    // remove
+    top: 100px;
+    right: 200px;
+    width: 600px;
+  }
+}

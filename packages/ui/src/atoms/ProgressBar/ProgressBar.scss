@@ -1,0 +1,17 @@
+.ProgressBar {
+  height: 10px;
+  border-radius: 0;
+  width: 100%;
+
+  &::-webkit-progress-value {
+    background-color: var(--bosch-blue-50);
+  }
+
+  &::-webkit-progress-bar {
+    background-color: var(--bosch-gray-90);
+  }
+
+  &::-moz-progress-bar {
+    background-color: var(--bosch-gray-90);
+  }
+}

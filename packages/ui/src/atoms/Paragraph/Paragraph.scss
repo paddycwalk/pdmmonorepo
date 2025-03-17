@@ -1,0 +1,18 @@
+@use "../../../styles/mixins";
+
+.Paragraph {
+  &-small {
+    @include FontSizeSmall;
+  }
+
+  &-gray {
+    color: var(--bosch-gray-50);
+  }
+
+  &-bold {
+    font-weight: bold;
+  }
+  &-error {
+    color: var(--color-error);
+  }
+}

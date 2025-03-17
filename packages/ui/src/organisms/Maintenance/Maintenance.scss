@@ -1,0 +1,43 @@
+.Maintenance {
+  height: calc(100vh - 8px);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  align-items: center;
+  grid-template-rows: max-content;
+
+  &_content {
+    display: flex;
+    align-items: flex-start;
+    grid-column: 3 / 10;
+    gap: 24px;
+    height: fit-content;
+
+    .Icon {
+      width: 80px;
+      height: 80px;
+      flex: none;
+      align-self: start;
+    }
+  }
+
+  &_text {
+    hr {
+      margin: 20px 0;
+    }
+
+    .Headline {
+      margin-bottom: 10px;
+    }
+  }
+
+  &_logo {
+    width: 120px;
+    grid-column: 3 / 10;
+    margin: 38px 0;
+  }
+}
+
+.Supergraphic {
+  background-image: url("/images/supergraphic.png");
+  height: 8px;
+}

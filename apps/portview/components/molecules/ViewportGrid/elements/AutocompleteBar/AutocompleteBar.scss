@@ -1,0 +1,28 @@
+.AutocompleteBar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-smedium);
+  flex: 1;
+  margin-bottom: var(--space-mlarge);
+
+  &_separator {
+    border-top: var(--border-width) solid var(--bosch-gray-70);
+    margin-top: var(--space-tiny);
+    margin-bottom: var(--space-tiny);
+    width: 100%;
+  }
+
+  &_elements {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-smedium);
+  }
+
+  &_infoText {
+    text-align: left;
+    width: 100%;
+  }
+}

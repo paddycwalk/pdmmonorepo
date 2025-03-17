@@ -1,0 +1,30 @@
+.Viewport{
+  &_introText {
+    margin-bottom: var(--space-medium);
+
+    h1 {
+      margin-bottom: var(--space-medium);
+      font-size: var(--font-size-large);
+      line-height: var(--line-height-large);
+      font-weight: bold;
+    }
+  }
+
+  &_csoSelect {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-small);
+  }
+
+  &_downloadButton {
+    margin-left: auto;
+  }
+
+  &_hint {
+    margin-bottom: var(--space-small);
+  }
+
+  &_csoDropdown {
+    margin-bottom: var(--space-smedium);
+  }
+}

@@ -1,0 +1,81 @@
+.Dropdown {
+  font-family: BoschSans;
+  width: 100%;
+  position: relative;
+
+  &_label {
+    position: absolute;
+    top: -8px;
+    left: 5px;
+    z-index: 1;
+    background-color: var(--bosch-white);
+    padding: 0 5px;
+    @include FontSizeTiny;
+  }
+
+  .Dropdown {
+    &__control {
+      border-radius: 0;
+
+      &:hover {
+        border-color: var(--bosch-black);
+        cursor: text;
+      }
+    }
+
+    &__indicator-separator {
+      display: none;
+    }
+
+    &__menu {
+      margin: 0;
+      border-radius: 0;
+      border: 1px solid var(--bosch-blue-50);
+      box-shadow: none;
+
+      position: relative;
+      overflow: auto;
+
+      &-list {
+        padding: 0;
+      }
+    }
+
+    &__option {
+      background-color: unset;
+      color: var(--bosch-black);
+
+      &:hover {
+        background-color: var(--bosch-gray-90);
+        cursor: pointer;
+      }
+
+      &--is-selected {
+        font-weight: 700;
+      }
+    }
+
+    &__multi-value {
+      background-color: unset;
+      cursor: pointer;
+
+      &__remove {
+        &:hover {
+          background-color: var(--bosch-blue-50);
+
+          svg {
+            fill: var(--bosch-white);
+          }
+        }
+      }
+
+      &__label {
+        font-size: inherit;
+      }
+    }
+
+    &__indicator {
+      cursor: pointer;
+    }
+  }
+}

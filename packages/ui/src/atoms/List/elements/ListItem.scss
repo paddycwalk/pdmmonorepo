@@ -1,0 +1,42 @@
+.List {
+  &_item {
+    margin-left: var(--space-medium);
+    display: flex;
+
+    &:hover {
+      background-color: var(--color-light);
+    }
+
+    &-default {
+      margin-left: 0;
+
+      &::before {
+        margin-right: var(--space-small);
+      }
+
+      &:hover {
+        background-color: unset;
+      }
+    }
+
+    &-error {
+      margin-left: 0;
+
+      &::before {
+        margin-right: var(--space-small);
+        color: var(--color-error);
+      }
+
+      &:hover {
+        background-color: unset;
+      }
+    }
+  }
+  &_text {
+    @include FontSizeDefault;
+
+    &-error {
+      color: var(--color-error);
+    }
+  }
+}

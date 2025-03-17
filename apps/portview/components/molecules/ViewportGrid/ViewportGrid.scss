@@ -1,0 +1,38 @@
+.ViewportGrid {
+
+  &_head {
+    display: flex;
+    align-items: center;
+  }
+
+  &_cellRenderer {
+    word-wrap: break-word; /* Umbrüche bei langen Wörtern */
+    white-space: normal; /* Standardmäßiges Umbruchverhalten */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex: auto;
+    justify-content: space-between;
+    line-height: normal;
+  }
+
+  &_headerCell {
+    text-overflow: clip;
+    overflow: visible;
+    white-space: normal;
+    height: auto;
+  }
+
+  .Grid {
+    margin-top: 20px;
+
+    &_GridHeaderCell {
+      &_display-text {
+        text-overflow: clip;
+        overflow: visible;
+        white-space: normal;
+        height: auto;
+      }
+    }
+  }
+}

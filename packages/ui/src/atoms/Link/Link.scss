@@ -1,0 +1,19 @@
+@use "../../../styles/mixins";
+
+.Link {
+  text-decoration: none;
+  list-style: none;
+  color: var(--bosch-blue-50);
+
+  &-icon {
+    gap: 10px;
+  }
+
+  &-underline {
+    text-decoration: underline;
+  }
+
+  &-small {
+    @include FontSizeSmall;
+  }
+}

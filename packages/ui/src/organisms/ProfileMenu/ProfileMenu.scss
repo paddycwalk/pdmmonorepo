@@ -1,0 +1,59 @@
+.ProfileMenu {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+
+  &_infos {
+    display: flex;
+    height: 110px;
+    border-bottom: 1px solid var(--bosch-black);
+    align-items: center;
+    flex-direction: row;
+    padding: 0 var(--space-smedium);
+    gap: var(--space-smedium);
+  }
+
+  &_avatar {
+    width: 80px;
+    height: 80px;
+    background-color: var(--bosch-blue-50);
+    color: var(--bosch-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &_actions {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &_left {
+    border-right: 1px solid var(--bosch-black);
+  }
+
+  &_right,
+  &_left {
+    width: 50%;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .Paragraph {
+      margin-bottom: 5px;
+      padding: 0 20px;
+    }
+  }
+
+  .Button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    &:hover {
+      background-color: var(--bosch-gray-90);
+    }
+  }
+}

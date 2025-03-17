@@ -1,0 +1,25 @@
+{
+  "name": "portview",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development next dev --turbopack -p 3007",
+    "prd": "cross-env NODE_ENV=production next dev --turbopack -p 3007",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint --max-warnings 0",
+    "check-types": "tsc --noEmit",
+    "labels:export": "ts-node src/scripts/labels/export.ts labels.csv",
+    "labels:import": "ts-node src/scripts/labels/import.ts labels.csv src/constants.ts",
+    "sonar": "node ./sonar.js"
+  },
+  "dependencies": {
+    "@repo/ui": "*",
+    "@repo/global-functions": "*"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*"
+  }
+}

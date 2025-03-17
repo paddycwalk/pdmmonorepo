@@ -1,0 +1,40 @@
+.HelpBox {
+  position: fixed;
+  bottom: 0;
+  right: var(--space-mlarge);
+  z-index: 1000;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+
+  &.HelpBox-open {
+    transform: translateY(0);
+  }
+
+  &_toggleBtn {
+    position: fixed;
+    right: 0;
+    top: 0;
+    transform: translateY(-100%);
+
+    &-open {
+      svg {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+
+  &_content {
+    background-color: var(--bosch-blue-50);
+    padding: 20px;
+    max-width: 800px;
+    max-height: 700px;
+    overflow: auto;
+    color: var(--bosch-white);
+
+    .Icon {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 3px;
+    }
+  }
+}

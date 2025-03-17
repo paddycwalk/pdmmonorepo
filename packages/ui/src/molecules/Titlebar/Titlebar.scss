@@ -1,0 +1,22 @@
+.Titlebar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  background-color: var(--bosch-white);
+  top: 46px;
+  width: calc(100% - 250px);
+  padding: var(--space-small) var(--space-mlarge);
+  height: 60px;
+  z-index: 1;
+  border-bottom: 1px solid var(--bosch-black);
+  justify-content: space-between;
+
+  &_goBack {
+    margin-right: var(--space-smedium);
+  }
+
+  &_left {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,66 @@
+---
+team: od
+build:
+  type: node
+  main:
+    commandSets:
+      - identifier: project1
+        cmds:
+          - type: npm
+            cmd: clean-install
+          - type: npm
+            cmd: run
+            args: build --filter=project1
+      - identifier: defaultproject
+        cmds:
+          - type: npm
+            cmd: clean-install
+          - type: npm
+            cmd: run
+            args: build --filter=defaultproject
+  default:
+    cmds:
+      - type: npm
+        cmd: clean-install
+      - type: npm
+        cmd: run
+        args: build
+# Defines, which branches need deployment. Don't forget to configure the build & deployment for each branch.
+branchesToDeploy:
+  - main
+# Defines all necessary maven command parts and deployment target to use for a specific branch or as default.
+# Deployments need to be defined for specific branches!
+branchBasedDeployments:
+  # "default" gets applied to any branch or pull request not defined below
+  main:
+    deploymentType: filesync
+    deployments:
+      - buildReference: project1
+        source: "./apps/project1/.next/"
+        type: "ssh"
+        sourceRegex: ".*"
+        hosts:
+          - hostname: "aragon-rvw.nautilus"
+            tmp: "/export/vol1/webdoc/tmp/web-ressources/pdmtools/project1"
+            targets:
+              - "/export/vol1/webdoc/htdocs/buderus2023.kittelberger.net/test/project1"
+            shellsteps:
+              - type: purge
+                purge: tmp
+              - type: deploy
+                delete: true
+      - buildReference: defaultproject
+        source: "./apps/defaultproject/.next/"
+        type: "ssh"
+        sourceRegex: ".*"
+        hosts:
+          - hostname: "aragon-rvw.nautilus"
+            tmp: "/export/vol1/webdoc/tmp/web-ressources/pdmtools/defaultproject"
+            targets:
+              - "/export/vol1/webdoc/htdocs/buderus2023.kittelberger.net/test/defaultproject"
+            shellsteps:
+              - type: purge
+                purge: tmp
+              - type: deploy
+                delete: true
+version: 2

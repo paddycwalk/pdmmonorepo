@@ -1,0 +1,30 @@
+.Toastify {
+  .Toastify {
+    &__toast {
+      border-radius: 0;
+      font-family: "BoschSans";
+      color: var(--color-white);
+      min-height: 50px;
+
+      &--success {
+        background-color: var(--color-success);
+      }
+
+      &--info {
+        background-color: var(--color-info);
+      }
+
+      &--error {
+        background-color: var(--color-error);
+      }
+
+      &--warning {
+        background-color: var(--color-warning);
+      }
+    }
+
+    &__toast-container {
+      border-radius: 0;
+    }
+  }
+}

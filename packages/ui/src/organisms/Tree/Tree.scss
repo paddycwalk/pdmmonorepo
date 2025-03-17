@@ -1,0 +1,97 @@
+.Tree {
+  &_main {
+    display: flex;
+    overflow: auto;
+  }
+
+  .TreeBranch {
+    padding: var(--space-small) 0px;
+    height: 270px;
+    width: max-content;
+    min-width: 265px;
+    max-width: 360px;
+    overflow-y: unset;
+    overflow-x: hidden;
+    border-right: 1px solid var(--bosch-black);
+  }
+
+  .TreeNode {
+    transition: background-color 150ms;
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-light);
+      transition: background-color 150ms;
+    }
+
+    &-active {
+      font-weight: bold;
+    }
+
+    &-disabled {
+      color: gray;
+    }
+
+    &-colored {
+      color: var(--bosch-blue-50);
+    }
+
+    &-linethrough {
+      text-decoration: line-through;
+    }
+
+    &_display-text {
+      all: unset;
+      padding: var(--space-tiny) var(--space-small);
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    &_controls {
+      display: flex;
+      padding: var(--space-tiny) var(--space-small);
+      padding-left: 0;
+
+      &-left {
+        padding: 0;
+      }
+    }
+  }
+
+  .SortableItem {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    transition: background-color 150ms;
+
+    &:hover {
+      background-color: var(--bosch-gray-90);
+    }
+
+    &.dragging {
+      color: var(--color-primary);
+    }
+
+    &-p {
+      .TreeNode_display-text {
+        padding-left: var(--space-tiny);
+      }
+    }
+  }
+
+  .DragHandle {
+    margin-left: var(--space-small);
+
+    &.is-dragging {
+      color: var(--bosch-blue-50);
+
+      + div {
+        color: var(--bosch-blue-50);
+      }
+    }
+  }
+}

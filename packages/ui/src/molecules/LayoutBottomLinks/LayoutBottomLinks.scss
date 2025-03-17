@@ -1,0 +1,15 @@
+.Layout {
+  &_bottomLinks {
+    padding: var(--space-medium);
+    display: flex;
+    gap: var(--space-smedium);
+    flex-direction: column;
+    text-decoration: none;
+    list-style: none;
+    border-top: 1px solid var(--bosch-gray-60);
+
+    .Link {
+      color: var(--bosch-white);
+    }
+  }
+}

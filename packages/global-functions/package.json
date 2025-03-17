@@ -1,0 +1,39 @@
+{
+  "name": "@repo/global-functions",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    "./Cookie/cleanCookie": "./Cookie/cleanCookie.tsx",
+    "./Token/getRefreshAccessToken": "./Token/getRefreshAccessToken.tsx",
+    "./Token/errorLink": "./Token/errorLink.tsx",
+    "./Token/verifyToken": "./Token/verifyToken.tsx",
+    "./Clients/securedPubGenBackendServer": "./Clients/securedPubGenBackendServer.tsx",
+    "./Clients/securedPmLisBackendServer": "./Clients/securedPmLisBackendServer.tsx",
+    "./Clients/securedPortViewBackendServer": "./Clients/securedPortViewBackendServer.tsx",
+    "./Middleware/createAuthMiddleware": "./Middleware/createAuthMiddleware.tsx",
+    "./Clients/pubgen/config": "./Clients/pubgen/config.tsx",
+    "./Clients/pmlis/config": "./Clients/pmlis/config.tsx",
+    "./Clients/portview/config": "./Clients/portview/config.tsx",
+    "./Clients/pmmpeportal/config": "./Clients/pmmpeportal/config.tsx",
+    "./Types/applicationLocale": "./Types/applicationLocale.ts",
+    "./Constants/defaultLocale": "./Constants/defaultLocale.ts",
+    "./Constants/applicationLocales": "./Constants/applicationLocales.ts",
+    "./Labels/flatten": "./Labels/flatten.tsx",
+    "./Labels/excel": "./Labels/excel.tsx",
+    "./Labels/astify": "./Labels/astify.tsx",
+    "./Maintenance/maintenanceData": "./Maintenance/maintenanceData.tsx",
+    "./Maintenance/getMaintenanceData": "./Maintenance/getMaintenanceData.tsx",
+    "./Maintenance/getMaintenanceDate": "./Maintenance/getMaintenanceDate.tsx",
+    "./Config/globalConfig": "./Config/globalConfig.tsx",
+    "./User/portalUser": "./User/portalUser.tsx",
+    "./User/getPortalUser": "./User/getPortalUser.tsx"
+  },
+  "dependencies": {
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "types": "",
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*"
+  }
+}

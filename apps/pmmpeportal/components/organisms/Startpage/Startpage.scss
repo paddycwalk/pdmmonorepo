@@ -1,0 +1,50 @@
+.Startpage {
+  h1 {
+    margin-bottom: var(--space-medium);
+  }
+
+  .projectsEmptyList {
+    margin-top: var(--space-medium);
+
+    .serviceDeskBtn {
+      color: var(--bosch-white);
+      display: inline-block;
+      height: auto;
+      padding: var(--space-tiny) var(--space-small);
+    }
+  }
+
+  .projectsList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 32px;
+    row-gap: 32px;
+    margin-top: var(--space-mlarge);
+  }
+
+  .project {
+    background: var(--bosch-white);
+    padding: var(--space-medium);
+    transition: var(--transition);
+
+    &_icon {
+      width: 90px;
+      margin: 0 auto;
+    }
+
+    &_title {
+      text-align: center;
+      @include FontSizeLarge;
+      padding: var(--space-small);
+    }
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: var(--box-shadow);
+      scale: 1.02;
+    }
+  }
+  .LoadingSpinner {
+    margin-top: var(--space-mlarge);
+  }
+}

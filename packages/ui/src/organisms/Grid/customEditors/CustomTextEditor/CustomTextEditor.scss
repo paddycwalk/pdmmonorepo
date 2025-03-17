@@ -1,0 +1,24 @@
+.CustomTextEditor {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &_box {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-end;
+  }
+
+  &_toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &_btns {
+    display: flex;
+    gap: 10px;
+  }
+}

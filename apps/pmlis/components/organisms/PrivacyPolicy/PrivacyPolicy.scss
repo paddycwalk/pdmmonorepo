@@ -1,0 +1,15 @@
+.PrivacyPolicy {
+  h1,
+  h2 {
+    @include FontSizeLarge;
+  }
+
+  ul {
+    padding: revert;
+  }
+
+  p {
+    @include FontSizeDefault;
+    margin: var(--space-25) 0;
+  }
+}

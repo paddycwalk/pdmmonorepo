@@ -1,0 +1,48 @@
+.NewsletterRegistry {
+  &_introText {
+    margin-bottom: var(--space-mlarge);
+
+    h1 {
+      margin-bottom: var(--space-medium);
+    }
+  }
+
+  &_hint {
+    margin-bottom: var(--space-small);
+  }
+
+  &_content-bottom {
+    display: flex;
+    justify-content: flex-end;
+
+    &:first-child {
+      margin-right: var(--space-small);
+    }
+    Button {
+      margin-top: var(--space-smedium);
+    }
+    .LoadingSpinner {
+      margin-top: var(--space-medium);
+    }
+  }
+
+  &_deregister {
+    margin-top: var(--space-smedium);
+    margin-bottom: var(--space-small);
+
+    p {
+      margin-top: var(--space-smedium);
+      margin-bottom: var(--space-smedium);
+    }
+  }
+
+  .DropdownSelector {
+    &_hint {
+      margin-bottom: var(--space-smedium);
+    }
+  }
+
+  .Dropdown {
+    margin-top: var(--space-smedium);
+  }
+}

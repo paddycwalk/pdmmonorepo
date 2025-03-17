@@ -1,0 +1,64 @@
+.Login {
+  height: 100vh;
+  background-image: url("/images/login.jpg");
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-column: 5 / 9;
+  }
+
+  &_hdl {
+    margin-bottom: var(--space-small);
+  }
+
+  &_subHdl {
+    font-size: var(--font-size-small);
+    margin-bottom: var(--space-medium);
+  }
+
+  &_intro {
+    font-size: var(--font-size-default);
+    margin-bottom: var(--space-mlarge);
+  }
+
+  &_bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: var(--space-medium);
+
+    .Link {
+      height: fit-content;
+    }
+  }
+
+  &_buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: var(--space-medium);
+    gap: var(--space-small);
+  }
+
+  &_footer {
+    margin-top: var(--space-small);
+    font-size: var(--font-size-small);
+  }
+
+  .Panel {
+    margin-top: var(--space-mlarge);
+  }
+
+  .Layout_links {
+    background-color: var(--bosch-gray-20);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+  }
+}

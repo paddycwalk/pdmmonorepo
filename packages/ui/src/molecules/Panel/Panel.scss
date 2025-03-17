@@ -1,0 +1,53 @@
+.Panel {
+  width: 100%;
+  background-color: var(--bosch-white);
+
+  &_head {
+    padding: 0 20px;
+    border-bottom: 1px solid var(--bosch-gray-80);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .Panel_toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: var(--bosch-gray-60);
+      border-left: 1px solid var(--bosch-gray-80);
+      height: 100%;
+      padding-left: 15px;
+      padding-right: 0px;
+
+      &:hover {
+        color: var(--bosch-blue);
+      }
+    }
+  }
+
+  &_body {
+    overflow: hidden;
+    transition:
+      opacity 0.3s ease,
+      max-height 0.3s ease;
+    opacity: 1;
+
+    &-collapsed {
+      opacity: 0;
+      max-height: 0;
+    }
+  }
+
+  &_content {
+    padding: 20px;
+
+    &-noPadding {
+      padding: 0;
+    }
+  }
+
+  &-shadow {
+    box-shadow: var(--box-shadow);
+  }
+}
