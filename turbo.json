@@ -3,8 +3,7 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "env": ["SOME_ENV_VAR"],
-      "outputs": ["dist/**"]
+      "env": ["SOME_ENV_VAR"]
     },
     "pmlis#build": {
       "dependsOn": ["^build"],
