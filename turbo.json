@@ -1,25 +1,37 @@
 {
   "$schema": "https://turbo.build/schema.json",
-  "ui": "tui",
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "inputs": ["$TURBO_DEFAULT$", ".env*"],
+      "env": ["SOME_ENV_VAR"],
+      "outputs": ["dist/**"]
+    },
+    "pmlis#build": {
+      "dependsOn": ["^build"],
+      "env": ["SOME_OTHER_ENV_VAR"],
       "outputs": [".next/**", "!.next/cache/**"]
     },
-    "lint": {
-      "dependsOn": ["^lint"]
+    "portview#build": {
+      "dependsOn": ["^build"],
+      "env": ["SOME_OTHER_ENV_VAR"],
+      "outputs": [".next/**", "!.next/cache/**"]
     },
-    "check-types": {
-      "dependsOn": ["^check-types"]
+    "project1#build": {
+      "dependsOn": ["^build"],
+      "env": ["SOME_OTHER_ENV_VAR"],
+      "outputs": [".next/**", "!.next/cache/**"]
     },
-    "dev": {
-      "cache": false,
-      "persistent": true
+    "pmmpeportal#build": {
+      "dependsOn": ["^build"],
+      "env": ["SOME_OTHER_ENV_VAR"],
+      "outputs": [".next/**", "!.next/cache/**"]
     },
-    "prd": {
-      "cache": false,
-      "persistent": true
+    "defaultproject#build": {
+      "dependsOn": ["^build"],
+      "env": ["SOME_OTHER_ENV_VAR"],
+      "outputs": [".next/**", "!.next/cache/**"]
     }
-  }
+  },
+  "globalEnv": ["GITHUB_TOKEN"],
+  "globalDependencies": ["tsconfig.json"]
 }
