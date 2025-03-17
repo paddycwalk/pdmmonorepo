@@ -3,32 +3,20 @@
   "tasks": {
     "build": {
       "dependsOn": ["^build"],
-      "env": ["SOME_ENV_VAR"]
+      "env": ["SOME_ENV_VAR"],
+      "outputs": [
+        "build/**",
+        ".vercel/**",
+        "dist/**",
+        ".next/**",
+        "!.next/cache/**"
+      ]
     },
-    "pmlis#build": {
-      "dependsOn": ["^build"],
-      "env": ["SOME_OTHER_ENV_VAR"],
-      "outputs": [".next/**"]
+    "lint": {
+      "dependsOn": ["^build", "^lint"]
     },
-    "portview#build": {
-      "dependsOn": ["^build"],
-      "env": ["SOME_OTHER_ENV_VAR"],
-      "outputs": [".next/**"]
-    },
-    "project1#build": {
-      "dependsOn": ["^build"],
-      "env": ["SOME_OTHER_ENV_VAR"],
-      "outputs": [".next/**"]
-    },
-    "pmmpeportal#build": {
-      "dependsOn": ["^build"],
-      "env": ["SOME_OTHER_ENV_VAR"],
-      "outputs": [".next/**"]
-    },
-    "defaultproject#build": {
-      "dependsOn": ["^build"],
-      "env": ["SOME_OTHER_ENV_VAR"],
-      "outputs": [".next/**"]
+    "check-types": {
+      "dependsOn": ["^build", "^check-types"]
     }
   },
   "globalEnv": ["GITHUB_TOKEN"],
