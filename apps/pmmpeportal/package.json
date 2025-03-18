@@ -21,9 +21,5 @@
   "devDependencies": {
     "@repo/eslint-config": "*",
     "@repo/typescript-config": "*"
-  },
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ]
+  }
 }
