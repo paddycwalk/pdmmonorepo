@@ -34,6 +34,7 @@
     "react-use": "^17.6.0",
     "sass": "^1.85.1",
     "scroll-into-view-if-needed": "^3.1.0",
+    "sharp": "^0.33.5",
     "yup": "^1.6.1"
   },
   "devDependencies": {
@@ -48,8 +49,8 @@
     "cross-env": "^7.0.3",
     "prettier": "^3.5.2",
     "sonarqube-scanner": "^4.2.6",
-    "turbo": "^2.4.4",
     "tsx": "^4.19.3",
+    "turbo": "^2.4.4",
     "typescript": "^5.7.3"
   },
   "engines": {
